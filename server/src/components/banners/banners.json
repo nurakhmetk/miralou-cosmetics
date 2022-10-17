@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_banners_banners",
+  "info": {
+    "displayName": "Banners",
+    "icon": "umbrella-beach"
+  },
+  "options": {},
+  "attributes": {
+    "pictures": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

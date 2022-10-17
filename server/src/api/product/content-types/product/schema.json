@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "CurrentPrice": {
+      "type": "integer",
+      "required": true,
+      "max": 9999999,
+      "default": 0
+    },
+    "OldPrice": {
+      "type": "integer",
+      "max": 9999999,
+      "default": 0
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "Name"
+    },
+    "Pictures": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "ShortDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "Tags": {
+      "type": "richtext",
+      "required": true
+    },
+    "ProductCode": {
+      "type": "uid"
+    },
+    "MainImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::category.category",
+      "inversedBy": "product"
+    },
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "products"
+    }
+  }
+}

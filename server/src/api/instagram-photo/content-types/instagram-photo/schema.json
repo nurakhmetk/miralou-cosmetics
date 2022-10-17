@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "instagram_photos",
+  "info": {
+    "singularName": "instagram-photo",
+    "pluralName": "instagram-photos",
+    "displayName": "Instagram Photos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "photos": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "timers",
+  "info": {
+    "singularName": "timer",
+    "pluralName": "timers",
+    "displayName": "Timer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "timerImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
